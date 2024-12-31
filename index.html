@@ -1,0 +1,2267 @@
+
+<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/content.blade.php-->
+
+
+<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/index.blade.php-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="8kpl5BPMA129SiqODBUO6CRmIxiIsEMxMkv53sGD">
+    <title>Exment  | お知らせ</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/css.blade.php-->
+    <link rel="stylesheet" href="lib/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="vendor/exment/fullcalendar/core/main.min.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/fullcalendar/daygrid/main.min.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/fullcalendar/list/main.min.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/fullcalendar/timegrid/main.min.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/css/common.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/css/workflow.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/css/customform.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/codemirror/codemirror.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/exment/jstree/themes/default/style.min.css?ver=v6.1.6">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/plugins/iCheck/all.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/bootstrap-fileinput/css/fileinput.min.css?v=4.5.2">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/plugins/ionslider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/plugins/ionslider/ion.rangeSlider.skinNice.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/fontawesome-iconpicker/dist/css/fontawesome-iconpicker.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/bootstrap-duallistbox/dist/bootstrap-duallistbox.min.css?v=3.0.9">
+    <link rel="stylesheet" href="vendor/exment/css/progresstracker.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/dist/css/skins/skin-blue-light.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/font-awesome/css/v4-shims.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/laravel-admin/laravel-admin.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/nprogress/nprogress.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/sweetalert2/dist/sweetalert2.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/nestable/nestable.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/toastr/build/toastr.min.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/bootstrap3-editable/css/bootstrap-editable.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/google-fonts/fonts.css">
+    <link rel="stylesheet" href="vendor/laravel-admin/AdminLTE/dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="admin/plugins/test_plugin_page/public/1.css">
+    <link rel="stylesheet" href="admin/plugins/test_plugin_page/public/calendar.css">
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/css.blade.php-->
+
+    <script src="vendor/laravel-admin/AdminLTE/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/js.blade.php-->
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/js.blade.php-->
+
+</head>
+
+<body class="hold-transition skin-blue-light sidebar-mini">
+<div class="wrapper">
+
+    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/header.blade.php-->
+<!-- Main Header -->
+<header class="main-header">
+
+    <!-- Logo -->
+    <a href="admin" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini">Exm</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><img src="admin/files/f68a3050-c71c-11ef-9a5f-07fe19e95c51" alt="header logo"></span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/search/search-bar.blade.php-->
+
+<form action="admin/search" method="get" class="search-form" pjax-container>
+    <div class="input-group input-group-sm ">
+        <input type="text" name="query" id="query" class="form-control" placeholder="データ検索" data-ajax_url="admin/search/header" data-list_url="admin/search" />
+        <span class="input-group-btn">
+            <button type="submit" id="search-btn" class="btn btn-flat">
+                <i class="fa fa-search"></i>
+            </button>
+        </span>
+    </div>
+</form>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/search/search-bar.blade.php-->            <input type="hidden" id="gridrow_select_edit" value="" />            <input type="hidden" id="gridrow_select_disabled" value="" />            <input type="hidden" id="copy_toastr" value="コピーしました！" />            <input type="hidden" id="exment_undefined_error" value="予期せぬエラーが発生しました。" />            <input type="hidden" id="exment_error_title" value="エラー" />            <input type="hidden" id="exment_expired_error" value="ページの有効期限が切れました。画面の更新を実施してください。" />            <input type="hidden" id="admin_prefix" value="admin" />            <input type="hidden" id="admin_base_uri" value="" />            <input type="hidden" id="admin_uri" value="admin" />
+
+        <!-- Navbar Right Menu -->
+        <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+
+                
+<li>
+    <a href="https://exment.net/docs/#/ja/" target="_blank" id="manual_link" style="font-size:25px; padding-top:12.5px; padding-bottom:12.5px;">
+        <i class="fa fa-question-circle"></i>
+    </a>
+</li>
+<input type="hidden" value="https://exment.net/docs/#/ja/" id="manual_base_uri">
+<input type="hidden" value="[{&quot;uri&quot;:&quot;template&quot;,&quot;help_uri&quot;:&quot;template&quot;},{&quot;uri&quot;:&quot;search&quot;,&quot;help_uri&quot;:&quot;search&quot;},{&quot;uri&quot;:&quot;table&quot;,&quot;help_uri&quot;:&quot;table&quot;},{&quot;uri&quot;:&quot;column&quot;,&quot;help_uri&quot;:&quot;column&quot;},{&quot;uri&quot;:&quot;relation&quot;,&quot;help_uri&quot;:&quot;relation&quot;},{&quot;uri&quot;:&quot;formpublic&quot;,&quot;help_uri&quot;:&quot;publicform&quot;},{&quot;uri&quot;:&quot;form&quot;,&quot;help_uri&quot;:&quot;form&quot;},{&quot;uri&quot;:&quot;view&quot;,&quot;help_uri&quot;:&quot;view&quot;},{&quot;uri&quot;:&quot;relation&quot;,&quot;help_uri&quot;:&quot;relation&quot;},{&quot;uri&quot;:&quot;operation&quot;,&quot;help_uri&quot;:&quot;operation&quot;},{&quot;uri&quot;:&quot;plugin&quot;,&quot;help_uri&quot;:&quot;plugin&quot;},{&quot;uri&quot;:&quot;api_setting&quot;,&quot;help_uri&quot;:&quot;api&quot;},{&quot;uri&quot;:&quot;backup&quot;,&quot;help_uri&quot;:&quot;backup&quot;},{&quot;uri&quot;:&quot;role_group&quot;,&quot;help_uri&quot;:&quot;permission&quot;},{&quot;uri&quot;:&quot;auth\/menu&quot;,&quot;help_uri&quot;:&quot;menu&quot;},{&quot;uri&quot;:&quot;loginuser&quot;,&quot;help_uri&quot;:&quot;user&quot;},{&quot;uri&quot;:&quot;data\/user&quot;,&quot;help_uri&quot;:&quot;user&quot;},{&quot;uri&quot;:&quot;data\/mail_template&quot;,&quot;help_uri&quot;:&quot;mail&quot;},{&quot;uri&quot;:&quot;data\/base_info&quot;,&quot;help_uri&quot;:&quot;base_info&quot;},{&quot;uri&quot;:&quot;data&quot;,&quot;help_uri&quot;:&quot;data&quot;},{&quot;uri&quot;:&quot;dashboard&quot;,&quot;help_uri&quot;:&quot;dashboard&quot;},{&quot;uri&quot;:&quot;dashboardbox&quot;,&quot;help_uri&quot;:&quot;dashboard&quot;},{&quot;uri&quot;:&quot;system&quot;,&quot;help_uri&quot;:&quot;system_setting&quot;},{&quot;uri&quot;:&quot;workflow&quot;,&quot;help_uri&quot;:&quot;workflow_setting&quot;},{&quot;uri&quot;:&quot;login_setting&quot;,&quot;help_uri&quot;:&quot;login_setting&quot;},{&quot;uri&quot;:&quot;\/&quot;,&quot;help_uri&quot;:&quot;dashboard&quot;}]" id="help_urls">
+        <input id="notify_navbar_noitem" type="hidden" value="新着通知はありません。" />
+<li class="navbar-notify dropdown notifications-menu">
+    <a href="javascript:void(0);" class="container-notify hidden-xs dropdown-toggle" data-toggle="dropdown">
+      <i class="fa fa-bell"></i>
+    </a>
+
+    <ul class="dropdown-menu notifications-menu-dropdown">
+        <li>
+        <!-- inner menu: contains the actual data -->
+        <ul class="menu">
+        </ul>
+        </li>
+        <li class="footer"><a href="admin/notify_navbar">一覧</a></li>
+    </ul>
+</li><li>
+    <a href="javascript:void(0);" class="container-refresh hidden-xs">
+      <i class="fa fa-refresh"></i>
+    </a>
+</li>
+
+                <!-- User Account Menu -->
+                <li class="dropdown user user-menu">
+                    <!-- Menu Toggle Button -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <!-- The user image in the navbar-->
+                        <img src="vendor/exment/images/user.png" class="user-image" alt="User Image">
+                        <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                        <span class="hidden-xs">admin</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <!-- The user image in the menu -->
+                        <li class="user-header">
+                            <img src="vendor/exment/images/user.png" class="img-circle" alt="User Image">
+
+                            <p>
+                                admin
+                                <small>作成日時 ： 2024-09-09 16:32:29</small>
+                            </p>
+                        </li>
+                        <li class="user-footer">
+                                                        <div class="pull-left">
+                                <a href="admin/auth/setting" class="btn btn-default btn-flat">設定</a>
+                            </div>
+                                                        <div class="pull-right">
+                                <a href="admin/auth/logout" class="btn btn-default btn-flat" data-nopjax>ログアウト</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Control Sidebar Toggle Button -->
+                
+                    
+                
+            </ul>
+        </div>
+    </nav>
+</header><!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/header.blade.php-->
+    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/sidebar.blade.php-->
+
+<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/widgets/modal.blade.php-->
+<div tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" id="modal-showmodal" class="modal fade" data-contentname="">
+    <div role="document" class="exment-modal-dialog modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">データ確認</h4>
+        </div>
+        <div class="modal-body">
+            
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default pull-left modal-close" data-dismiss="modal">閉じる</button>
+            <button type="button" class="btn btn-default pull-left modal-reset" data-dismiss="modal">リセット</button>
+
+            <button type="button" class="btn btn-info modal-submit d-none">送信</button>
+
+            <input type="hidden" class="modal-close-defaultlabel" value="閉じる" />
+            <input type="hidden" class="modal-submit-defaultlabel" value="送信" />
+        </div>
+    </div>
+    </div>
+</div>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/widgets/modal.blade.php-->
+
+<aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                <img src="vendor/exment/images/user.png" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+                <p>admin</p>
+                <p class="small gray">&#064;admin</p>
+            </div>
+        </div>
+
+        <!-- search form (Optional) -->
+        <!--<form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+            </div>
+        </form>-->
+        <!-- /.search form -->
+
+        <!-- Sidebar Menu -->
+        <ul class="sidebar-menu">
+            <li class="header">メニュー</li>
+
+            <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin">
+                            <i class="fa fa-home"></i>
+                <span>HOME</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-file-text-o"></i>
+                <span>請求書管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/send_client">
+                            <i class="fa fa-user"></i>
+                <span>取引先</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/send_invoice">
+                            <i class="fa fa-pencil-square-o"></i>
+                <span>請求書</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                            </ul>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-database"></i>
+                <span>Manage Master</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/base_info">
+                            <i class="fa fa-building"></i>
+                <span>基本情報</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/organization">
+                            <i class="fa fa-sitemap"></i>
+                <span>組織</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/user">
+                            <i class="fa fa-user"></i>
+                <span>User</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/information">
+                            <i class="fa fa-exclamation"></i>
+                <span>お知らせ</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                            </ul>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/plugins/test_plugin_page">
+                            <i class="fa fa-pencil"></i>
+                <span>独自ページテスト</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/all_custom_columns">
+                            <i class="fa fa-columns"></i>
+                <span>全列</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li class="treeview">
+            <a href="#">
+                <i class="fa fa-user-circle-o"></i>
+                <span>管理者設定</span>
+                <i class="fa fa-angle-left pull-right"></i>
+            </a>
+            <ul class="treeview-menu">
+                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/system">
+                            <i class="fa fa-cogs"></i>
+                <span>システム設定</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/table">
+                            <i class="fa fa-table"></i>
+                <span>カスタムテーブル</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/auth/menu">
+                            <i class="fa fa-sitemap"></i>
+                <span>メニュー</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/template">
+                            <i class="fa fa-clone"></i>
+                <span>テンプレート</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/backup">
+                            <i class="fa fa-database"></i>
+                <span>バックアップ</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/loginuser">
+                            <i class="fa fa-user-plus"></i>
+                <span>ログインユーザー</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/role_group">
+                            <i class="fa fa-user-secret"></i>
+                <span>役割グループ</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/workflow">
+                            <i class="fa fa-share-alt"></i>
+                <span>ワークフロー</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/plugin">
+                            <i class="fa fa-plug"></i>
+                <span>プラグイン</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                                    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/mail_template">
+                            <i class="fa fa-bell-o"></i>
+                <span>通知テンプレート</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->                            </ul>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/test_err_noti_1507">
+                            <i class="fa fa-pencil"></i>
+                <span>部門メールアドレス</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/parent_table">
+                            <i class="fa fa-pencil"></i>
+                <span>親テーブル</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php--><!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+            <li>
+                             <a href="admin/data/test_err_noti_1507_table2">
+                            <i class="fa fa-pencil"></i>
+                <span>部門メールアドレス2</span>
+            </a>
+        </li>
+    <!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/menu.blade.php-->
+        </ul>
+        <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+</aside><!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/sidebar.blade.php-->
+    <div class="content-wrapper" id="pjax-container">
+        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/style.blade.php-->
+<style type="text/css">
+    </style><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/style.blade.php-->
+        <div id="app">
+            <section class="content-header">
+        <h1>
+                        <i class="fa fa-exclamation" style="padding-right:4px;"></i>
+                        お知らせ
+            <small>ユーザーに通知するお知らせです。ダッシュボードなどに表示することができます。</small>
+        </h1>
+
+        <!-- breadcrumb start -->
+        
+        <!-- breadcrumb end -->
+
+    </section>
+
+    <section class="content">
+
+        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/alerts.blade.php-->
+
+
+
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/alerts.blade.php-->        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/exception.blade.php-->
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/exception.blade.php-->        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/toastr.blade.php-->
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/toastr.blade.php-->
+        <div class="block_custom_value_grid custom_value_information row" data-custom_view_id="5" data-custom_view_suuid="b6d5afcda4ce26091f36" data-view_view_name="全件ビュー"><div class="col-sm-12"><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/table.blade.php-->
+<div class="box">
+    
+        <div class="box-header with-border">
+        <div class="pull-right">
+            
+            
+            
+        </div>
+                <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/tools.blade.php-->
+<div class="pull-left">
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/batch-actions.blade.php-->
+<input type="checkbox" class="grid-select-all" />&nbsp;
+
+<div class="btn-group grid-select-all-btn" style="display:none;margin-right: 5px;">
+    <a class="btn btn-sm btn-default"><span class="hidden-xs selected"></span></a>
+    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="grid-batch-0">一括削除 </a></li>
+            </ul>
+</div>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/batch-actions.blade.php--> <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/button.blade.php-->
+<div class="btn-group" style="margin-right: 5px" data-toggle="buttons">
+    <label class="btn btn-sm btn-dropbox 6773574401a15-filter-btn " title="フィルタ" data-loading-text="<i class='fa fa-spinner fa-spin '></i>">
+        <input type="checkbox"><i class="fa fa-filter"></i><span class="hidden-xs">&nbsp;&nbsp;フィルタ</span>
+    </label>
+
+        <button type="button" class="btn btn-sm btn-dropbox dropdown-toggle" data-toggle="dropdown">
+
+        <span></span>
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+                    <li><a href="admin/data/information?_scope_=trashed">削除済データ</a></li>
+                <li role="separator" class="divider"></li>
+        <li><a href="admin/data/information">取消</a></li>
+    </ul>
+    </div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/button.blade.php--> <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/quick-search.blade.php-->
+<form action="admin/data/information?" pjax-container style="display: inline-block;">
+    <div class="input-group input-group-sm hidden-xs" style="display: inline-block;">
+        <input type="text" name="query" class="form-control" style="width: 200px;" value="">
+
+        <div class="input-group-btn" style="display: inline-block;">
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</form><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/quick-search.blade.php-->
+</div>
+<div class="pull-right">
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php-->
+<div class="btn-group pull-right">
+<a class="btn btn-sm btn-twitter " 
+    style="margin-right:5px;"
+    data-widgetmodal_url=""
+    data-widgetmodal_method="GET"
+    data-widgetmodal_expand='[]'
+    data-widgetmodal_uuid='329fef30-c71f-11ef-b788-bb083a953700'
+    data-widgetmodal_html='1'
+    
+>
+    <i class="fa fa-download"></i>
+    <span class="hidden-xs">&nbsp;インポート・エクスポート</span>
+
+    </a>
+
+
+<div class="widgetmodal_html" data-widgetmodal_title='インポート・エクスポート' data-widgetmodal_html_target='329fef30-c71f-11ef-b788-bb083a953700' style="display:none;">
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+<div class="modal-tile container-fluid">
+        <div class="row">
+                <h4 class="col-sm-12 groupheader">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            エクスポート(ビュー形式)
+            </h4>
+        
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">全て</h4>
+                    <div class="modal-tile-item-description">
+                        現在表示しているビューの形式で、すべてのデータをエクスポートします。
+                    </div>
+                    <div class="sub-buttons">
+                                                <a href="admin/data/information?_export_=all&amp;action=view_export&amp;format=csv" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;CSV
+                        </a>
+                                                <a href="admin/data/information?_export_=all&amp;action=view_export&amp;format=excel" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;Excel
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">現在のページ</h4>
+                    <div class="modal-tile-item-description">
+                        現在表示しているビューの形式で、現在のページのデータをエクスポートします。
+                    </div>
+                    <div class="sub-buttons">
+                                                <a href="admin/data/information?_export_=page%3A1&amp;action=view_export&amp;format=csv" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;CSV
+                        </a>
+                                                <a href="admin/data/information?_export_=page%3A1&amp;action=view_export&amp;format=excel" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;Excel
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        <div class="row">
+                <h4 class="col-sm-12 groupheader">
+            <i class="fa fa-check" aria-hidden="true"></i>
+            インポート
+            </h4>
+        
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <i class="fa fa-download" aria-hidden="true"></i>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">テンプレート出力</h4>
+                    <div class="modal-tile-item-description">
+                        インポートに使用する、テンプレートファイルをダウンロードします。
+                    </div>
+                    <div class="sub-buttons">
+                                                <a href="admin/data/information?_export_=all&amp;temp=1&amp;format=csv" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-o" aria-hidden="true"></i>&nbsp;CSV
+                        </a>
+                                                <a href="admin/data/information?_export_=all&amp;temp=1&amp;format=excel" class="btn btn-default btn-sm" target="_blank">
+                            <i class="fa fa-file-excel-o" aria-hidden="true"></i>&nbsp;Excel
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <i class="fa fa-upload" aria-hidden="true"></i>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">インポート</h4>
+                    <div class="modal-tile-item-description">
+                        インポート実行のためのダイアログを表示します。※インポートのためのデータは、「テンプレート出力」か、「エクスポート(すべてのシステム列・カスタム列)」で出力したデータで行ってください。
+                    </div>
+                    <div class="sub-buttons">
+                                                <a href="" class="btn btn-default btn-sm" data-widgetmodal_url="admin/data/information/importModal">
+                            <i class="fa fa-upload" aria-hidden="true"></i>&nbsp;インポート
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+</div>
+
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php--> <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/custom-value/new-button.blade.php-->
+<div class="btn-group pull-right" style="margin-right: 5px">
+    <a href="admin/data/information/create" class="btn btn-sm btn-success">
+        <i class="fa fa-plus"></i><span class="hidden-xs">&nbsp;&nbsp;新規</span>
+    </a>
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/custom-value/new-button.blade.php--> <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php-->
+<div class="btn-group pull-right">
+<a class="btn btn-sm btn-default " 
+    style="margin-right:5px;"
+    data-widgetmodal_url=""
+    data-widgetmodal_method="GET"
+    data-widgetmodal_expand='[]'
+    data-widgetmodal_uuid='32a006e0-c71f-11ef-84f5-35b874d58e52'
+    data-widgetmodal_html='1'
+    
+>
+    <i class="fa fa-cog"></i>
+    <span class="hidden-xs">&nbsp;テーブル詳細設定</span>
+
+    </a>
+
+
+<div class="widgetmodal_html" data-widgetmodal_title='テーブル詳細設定' data-widgetmodal_html_target='32a006e0-c71f-11ef-84f5-35b874d58e52' style="display:none;">
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+<div class="modal-tile container-fluid">
+        <div class="row">
+        
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/table" class="btn btn-default">
+                            <i class="fa fa-table" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">テーブル設定</h4>
+                    <div class="modal-tile-item-description">
+                        独自に変更できるカスタムテーブルの設定を行います。
+                    </div>
+                    <div class="sub-buttons">
+                                                <a href="admin/table/8/edit" class="btn btn-default btn-sm" >
+                            <i class="fa fa-table" aria-hidden="true"></i>&nbsp;通常設定
+                        </a>
+                                                <a href="admin/table/8/edit?columnmulti=1" class="btn btn-default btn-sm" >
+                            <i class="fa fa-cogs" aria-hidden="true"></i>&nbsp;拡張設定
+                        </a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/column/information" class="btn btn-default">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">カスタム列設定</h4>
+                    <div class="modal-tile-item-description">
+                        カスタム列ごとの設定を行います。列の必須項目、検索可能フィールドなどを定義します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/relation/information" class="btn btn-default">
+                            <i class="fa fa-compress" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">リレーション設定</h4>
+                    <div class="modal-tile-item-description">
+                        テーブル間同士の関連性(リレーション)を定義します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/form/information" class="btn btn-default">
+                            <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">フォーム設定</h4>
+                    <div class="modal-tile-item-description">
+                        ユーザーが入力できるフォーム画面を定義します。このページで設定した内容が、データフォーム画面に反映されます。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information" class="btn btn-default">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">ビュー設定</h4>
+                    <div class="modal-tile-item-description">
+                        データを一覧表示する時に使用する、カスタム列の項目や表示条件などの設定を行います。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/copy/information" class="btn btn-default">
+                            <i class="fa fa-copy" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">データコピー設定</h4>
+                    <div class="modal-tile-item-description">
+                        テーブルからテーブルにデータをコピーするための設定を定義します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/operation/information" class="btn btn-default">
+                            <i class="fa fa-reply-all" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">データ更新設定</h4>
+                    <div class="modal-tile-item-description">
+                        データの新規作成時や更新時、ボタンをクリック時などに、列の値を更新します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/notify/information" class="btn btn-default">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">通知設定</h4>
+                    <div class="modal-tile-item-description">
+                        特定の条件で、通知を行うための設定を行います。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/data/information" class="btn btn-default">
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">データ一覧</h4>
+                    <div class="modal-tile-item-description">
+                        このテーブルのデータ一覧を表示します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/table/8/edit?qrcodesetting=1" class="btn btn-default">
+                            <i class="fa fa-qrcode" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">二次元バーコード設定</h4>
+                    <div class="modal-tile-item-description">
+                        このテーブルの二次元バーコード設定を行います。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/table/8/edit?jancodesetting=1" class="btn btn-default">
+                            <i class="fa fa-barcode" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">JANバーコード設定</h4>
+                    <div class="modal-tile-item-description">
+                        このテーブルのJANバーコード設定を行います。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+</div>
+
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php--> <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php-->
+<div class="btn-group pull-right">
+<a class="btn btn-sm btn-default dropdown-toggle" 
+    style="margin-right:5px;"
+    data-widgetmodal_url=""
+    data-widgetmodal_method="GET"
+    data-widgetmodal_expand='[]'
+    data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+    data-widgetmodal_html=''
+    data-toggle="dropdown" aria-haspopup="1" aria-expanded=""
+>
+    <i class="fa fa-th-list"></i>
+    <span class="hidden-xs">&nbsp;ビュー&nbsp;:&nbsp;全件ビュー</span>
+
+        <span class="caret"></span>
+    </a>
+
+<ul class="dropdown-menu">
+                    <li class="dropdown-header">
+            システムビュー
+        </li>
+                            <li>
+            <a href="admin/data/information?view=b6d5afcda4ce26091f36" 
+                data-widgetmodal_url=""
+                data-widgetmodal_method="GET"
+                data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+                data-widgetmodal_html=""
+            >
+                                &nbsp;全件ビュー
+            </a>
+        </li>
+                            <li>
+            <a href="admin/data/information?view=99120fd4b360e15993d2" 
+                data-widgetmodal_url=""
+                data-widgetmodal_method="GET"
+                data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+                data-widgetmodal_html=""
+            >
+                                &nbsp;お知らせ一覧
+            </a>
+        </li>
+                            <li>
+            <a href="admin/data/information?view=a365a3651368ec131e84" 
+                data-widgetmodal_url=""
+                data-widgetmodal_method="GET"
+                data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+                data-widgetmodal_html=""
+            >
+                                &nbsp;test 1471
+            </a>
+        </li>
+                            <li class="dropdown-header">
+            ユーザービュー
+        </li>
+                            <li>
+            <a href="admin/data/information?view=fe159c3664d6ccaa094c" 
+                data-widgetmodal_url=""
+                data-widgetmodal_method="GET"
+                data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+                data-widgetmodal_html=""
+            >
+                                &nbsp;View admin
+            </a>
+        </li>
+                            <li class="dropdown-header">
+            設定
+        </li>
+                            <li>
+            <a href="javascript:void(0);" 
+                data-widgetmodal_url=""
+                data-widgetmodal_method="GET"
+                data-widgetmodal_uuid='32a01b40-c71f-11ef-b26e-7f12c0cdee18'
+                data-widgetmodal_html="1"
+            >
+                                &nbsp;設定を開く
+            </a>
+        </li>
+            </ul>
+
+<div class="widgetmodal_html" data-widgetmodal_title='ビュー' data-widgetmodal_html_target='32a01b40-c71f-11ef-b26e-7f12c0cdee18' style="display:none;">
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+<div class="modal-tile container-fluid">
+        <div class="row">
+        
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/5/edit?view_kind_type=9&amp;from_data=1" class="btn btn-default">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">現在のビュー設定変更</h4>
+                    <div class="modal-tile-item-description">
+                        現在表示しているビューの設定を変更します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/create?from_data=1&amp;copy_id=5" class="btn btn-default">
+                            <i class="fa fa-copy" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">現在のビューを複製</h4>
+                    <div class="modal-tile-item-description">
+                        現在のビューの設定を複製し、新規のビューを作成します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/create?from_data=1" class="btn btn-default">
+                            <i class="fa fa-list" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">ビュー新規作成</h4>
+                    <div class="modal-tile-item-description">
+                        データを一覧表示する、通常のビューを新規作成します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/create?view_kind_type=1&amp;from_data=1" class="btn btn-default">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">集計ビュー新規作成</h4>
+                    <div class="modal-tile-item-description">
+                        データの項目をグループ化し、合計値や最大値を集計し表示する、集計ビューを新規作成します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/create?view_kind_type=2&amp;from_data=1" class="btn btn-default">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">カレンダービュー新規作成</h4>
+                    <div class="modal-tile-item-description">
+                        データの日付をカレンダー形式で表示する、カレンダービューを新規作成します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-sm-12 col-md-6 modal-tile-col">
+            <div class="modal-tile-item">
+                <div class="col-sm-3 modal-tile-item-icon">
+                                            <a href="admin/view/information/create?view_kind_type=3&amp;from_data=1" class="btn btn-default">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </a>
+                                    </div>
+                <div class="col-sm-9">
+                    <h4 class="modal-tile-item-header">条件ビュー新規作成</h4>
+                    <div class="modal-tile-item-description">
+                        通知を実施する条件や、フォームの選択肢に表示するための条件を設定する、条件ビューを新規作成します。
+                    </div>
+                    <div class="sub-buttons">
+                                            </div>
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-tile-menu.blade.php-->
+</div>
+
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\exment\src/../resources/views/tools/modal-menu-button.blade.php-->
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/tools.blade.php-->            </div>
+    
+    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/container.blade.php-->
+<div class="box-header with-border hide" id="filter-box">
+    <form action="admin/data/information?" class="form-horizontal" pjax-container method="get">
+
+        <div class="row">
+                        <div class="col-md-12">
+                <div class="box-body">
+                    <div class="fields-group">
+                                                    <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/where.blade.php-->
+<div class="form-group">
+    <label class="col-sm-2 control-label"> タイトル</label>
+    <div class="col-sm-8">
+        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/text.blade.php-->
+<div class="input-group input-group-sm">
+            <div class="input-group-addon">
+            <i class="fa fa-pencil"></i>
+        </div>
+
+    <input type="text" class="form-control ckey_17e7643c44b7340a09cf" placeholder="タイトル" name="ckey_17e7643c44b7340a09cf" value="">
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/text.blade.php-->    </div>
+        <div class="col-sm-2" style="padding-top:3px;">
+        <input type="checkbox" class="isnull-ckey_17e7643c44b7340a09cf" name="isnull-ckey_17e7643c44b7340a09cf" value="1"  />&nbsp;空&nbsp;&nbsp;
+    </div>
+    </div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/where.blade.php-->
+                                            </div>
+                </div>
+            </div>
+                    </div>
+        <!-- /.box-body -->
+
+        <div class="box-footer">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+                        <div class="btn-group pull-left">
+                            <button class="btn btn-info submit btn-sm"><i
+                                        class="fa fa-search"></i>&nbsp;&nbsp;サーチ</button>
+                        </div>
+                        <div class="btn-group pull-left " style="margin-left: 10px;">
+                            <a href="admin/data/information?" class="btn btn-default btn-sm"><i
+                                        class="fa fa-undo"></i>&nbsp;&nbsp;リセット</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <input type="hidden" name="execute_filter" value="1" />
+    </form>
+</div><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/filter/container.blade.php-->
+
+    
+
+    <!-- /.box-header -->
+    <div class="box-body table-responsive no-padding">
+        <table class="table table-hover" id="grid-table67735743d1417">
+            <thead>
+                <tr >
+                                        <th class="column-__row_selector__" > </th>
+                                        <th class="column-ckey_6009adaf7dfed33a776f" style="">タイトル<a class="fa fa-fw fa-sort" href="admin/data/information?_sort%5Bcolumn%5D=exm__5e02681b3be5033d75e9.column_826b1d93b9ff4d1ef3b2&amp;_sort%5Btype%5D=-1&amp;_sort%5Bdirect%5D=1"></a></th>
+                                        <th class="column-ckey_da111a4a32b8c9950de0" style="">表示フラグ<a class="fa fa-fw fa-sort" href="admin/data/information?_sort%5Bcolumn%5D=exm__5e02681b3be5033d75e9.column_33a9c675590a72541431&amp;_sort%5Btype%5D=-1&amp;_sort%5Bdirect%5D=1"></a></th>
+                                        <th class="column-ckey_56bc839f5feee23fcbea" style="">重要度</th>
+                                        <th class="column-ckey_3cd0f7dd945d5a284019" style="">作成日時<a class="fa fa-fw fa-sort" href="admin/data/information?_sort%5Bcolumn%5D=exm__5e02681b3be5033d75e9.created_at&amp;_sort%5Btype%5D=-1&amp;_sort%5Bdirect%5D=1"></a></th>
+                                        <th class="column-ckey_87a5bccf5d42bbbb3678" style="">更新日時<a class="fa fa-fw fa-sort" href="admin/data/information?_sort%5Bcolumn%5D=exm__5e02681b3be5033d75e9.updated_at&amp;_sort%5Btype%5D=-1&amp;_sort%5Bdirect%5D=1"></a></th>
+                                        <th class="column-__actions__" >操作</th>
+                                    </tr>
+            </thead>
+
+            <tbody>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="49" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        111
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-17 13:33:53
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-17 18:37:53
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/49" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/49/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='49' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=49" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="45" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        test
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 18:02:53
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-17 13:28:59
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/45" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/45/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='45' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=45" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="44" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        test
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 18:02:07
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 18:02:07
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/44" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/44/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='44' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=44" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="42" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        2
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:40:01
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:43:07
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/42" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/42/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='42' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=42" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="41" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:38:42
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:38:42
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/41" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/41/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='41' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=41" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="40" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:37:06
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:37:06
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/40" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/40/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='40' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=40" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="39" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:28:06
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:28:06
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/39" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/39/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='39' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=39" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="38" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:27:12
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:27:12
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/38" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/38/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='38' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=38" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="37" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:18:12
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:18:12
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/37" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/37/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='37' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=37" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="36" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:17:44
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:17:44
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/36" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/36/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='36' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=36" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="35" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:17:14
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:17:14
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/35" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/35/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='35' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=35" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="34" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 17:05:02
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 17:05:02
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/34" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/34/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='34' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=34" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="33" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 16:25:28
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 16:25:28
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/33" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/33/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='33' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=33" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="32" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 16:20:37
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 16:20:37
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/32" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/32/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='32' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=32" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="31" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-05 16:16:28
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-05 16:16:28
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/31" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/31/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='31' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=31" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="27" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-03 19:18:57
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-03 19:18:57
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/27" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/27/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='27' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=27" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="20" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-03 18:04:24
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-03 18:04:24
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/20" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/20/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='20' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=20" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="14" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        1
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2024-12-03 16:17:01
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-03 16:17:01
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/14" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/14/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='14' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=14" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="5" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        ダッシュボード(TOPページ)からお知らせデータを非表示 or 削除にするには
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2019-01-04 20:11:59
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-10-10 11:13:37
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/5" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/5/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='5' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=5" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="4" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        データを新規追加するには
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2019-01-04 18:53:29
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2019-01-04 19:54:28
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/4" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/4/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='4' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=4" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="3" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        ユーザーに権限を追加、変更するには
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2019-01-04 19:04:05
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2019-01-04 19:53:47
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/3" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/3/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='3' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=3" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="2" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        テーブルを新規追加するには
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2019-01-04 19:49:37
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2019-01-04 19:52:59
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/2" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/2/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='2' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=2" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                                <tr >
+                                        <td  class="column-__row_selector__">
+                        <input type="checkbox" class="grid-row-checkbox" data-id="1" />
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-title column-ckey_6009adaf7dfed33a776f">
+                        Exmentへようこそ！
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-view_flg column-ckey_da111a4a32b8c9950de0">
+                        YES
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-priority column-ckey_56bc839f5feee23fcbea">
+                        通常
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-created_at column-ckey_3cd0f7dd945d5a284019">
+                        2019-01-04 18:48:15
+                    </td>
+                                        <td style="min-width:100px; max-width:300px; word-wrap:break-word; white-space:normal" class="column-updated_at column-ckey_87a5bccf5d42bbbb3678">
+                        2024-12-03 15:51:41
+                    </td>
+                                        <td  class="column-__actions__">
+                        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/1" class='grid-row-view' data-toggle='tooltip' title='表示'>
+    <i class="fa fa-eye" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/1/edit" class='grid-row-edit' data-toggle='tooltip' title='編集'>
+    <i class="fa fa-edit" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="javascript:void(0);" class='grid-row-delete' data-id='1' data-toggle='tooltip' title='削除'>
+    <i class="fa fa-trash" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php--><!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+<a href="admin/data/information/create?copy_id=1" data-toggle='tooltip' title='このデータの複製'>
+    <i class="fa fa-copy" ></i>
+</a><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/linker.blade.php-->
+                    </td>
+                                    </tr>
+                            </tbody>
+
+            
+
+        </table>
+
+    </div>
+
+    
+
+    <div class="box-footer table-footer clearfix">
+        全 <b>23</b> 件中 <b>1</b> - <b>23</b> 件目<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/pagination.blade.php-->
+<ul class="pagination pagination-sm no-margin pull-right">
+    <!-- Previous Page Link -->
+        <li class="page-item disabled"><span class="page-link">&laquo;</span></li>
+    
+    <!-- Pagination Elements -->
+        <!-- "Three Dots" Separator -->
+    
+    <!-- Array Of Links -->
+                <li class="page-item active"><span class="page-link">1</span></li>
+                
+    <!-- Next Page Link -->
+        <li class="page-item disabled"><span class="page-link">&raquo;</span></li>
+    </ul>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/pagination.blade.php-->
+<label class="control-label pull-right" style="margin-right: 10px; font-weight: 100;">
+
+        <small>表示</small>&nbsp;
+        <select class="input-sm grid-per-pager" name="per-page">
+            <option value="admin/data/information?per_page=10" >10</option>
+<option value="admin/data/information?per_page=20" >20</option>
+<option value="admin/data/information?per_page=30" >30</option>
+<option value="admin/data/information?per_page=50" >50</option>
+<option value="admin/data/information?per_page=100" selected>100</option>
+        </select>
+        &nbsp;<small>件</small>
+    </label>
+
+    </div>
+    <!-- /.box-body -->
+</div>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/grid/table.blade.php--></div></div>
+
+    </section>
+        </div>
+        <!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/script.blade.php-->
+<script data-exec-on-popstate>
+
+    $(function () {
+                        ///// delete click event
+    $(document).off('click', '[data-exment-delete]').on('click', '[data-exment-delete]', {}, function(ev){
+        ev.preventDefault();
+
+        // get url
+        let url = $(ev.target).closest('[data-exment-delete]').data('exment-delete');
+        
+        Exment.CommonEvent.ShowSwal(url, {
+            title: "本当に削除しますか？",
+            confirm:"確認",
+            method: 'delete',
+            cancel:"取消",
+        });
+    });
+
+                    $('.grid-row-checkbox').iCheck({checkboxClass:'icheckbox_minimal-blue'}).on('ifChanged', function () {
+    
+    var id = $(this).data('id');
+
+    if (this.checked) {
+        $.admin.grid.select(id);
+        $(this).closest('tr').css('background-color', '#ffffd5');
+    } else {
+        $.admin.grid.unselect(id);
+        $(this).closest('tr').css('background-color', '');
+    }
+}).on('ifClicked', function () {
+    
+    var id = $(this).data('id');
+    
+    if (this.checked) {
+        $.admin.grid.unselect(id);
+    } else {
+        $.admin.grid.select(id);
+    }
+    
+    var selected = $.admin.grid.selected().length;
+    
+    if (selected > 0) {
+        $('.grid-select-all-btn').show();
+    } else {
+        $('.grid-select-all-btn').hide();
+    }
+    
+    $('.grid-select-all-btn .selected').html("{n} 行選択".replace('{n}', selected));
+});
+
+                    
+$('.grid-row-delete').unbind('click').click(function() {
+
+    var id = $(this).data('id');
+
+    swal({
+        title: "本当に削除しますか？",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "確認",
+        showLoaderOnConfirm: true,
+        allowOutsideClick: false,
+        cancelButtonText: "取消",
+        preConfirm: function() {
+            $('.swal2-cancel').hide();
+            return new Promise(function(resolve) {
+                $.ajax({
+                    method: 'post',
+                    url: 'admin/data/information/' + id,
+                    data: {
+                        _method:'delete',
+                        _token:LA.token,
+                    },
+                    success: function (data) {
+                        $.pjax.reload('#pjax-container');
+
+                        resolve(data);
+                    }
+                });
+            });
+        }
+    }).then(function(result) {
+        var data = result.value;
+        if (typeof data === 'object') {
+            if (data.status) {
+                swal(data.message, '', 'success');
+            } else {
+                swal(data.message, '', 'error');
+            }
+        }
+    });
+});
+
+                            $.admin.grid.selects = {};
+$('.grid-select-all').iCheck({checkboxClass:'icheckbox_minimal-blue'});
+
+$('.grid-select-all').on('ifChanged', function(event) {
+    if (this.checked) {
+        $('.grid-row-checkbox').iCheck('check');
+    } else {
+        $('.grid-row-checkbox').iCheck('uncheck');
+    }
+}).on('ifClicked', function () {
+    if (this.checked) {
+        $.admin.grid.selects = {};
+    } else {
+        $('.grid-row-checkbox').each(function () {
+            var id = $(this).data('id');
+            $.admin.grid.select(id);
+        });
+    }
+
+    var selected = $.admin.grid.selected().length;
+    
+    if (selected > 0) {
+        $('.grid-select-all-btn').show();
+    } else {
+        $('.grid-select-all-btn').hide();
+    }
+    
+    $('.grid-select-all-btn .selected').html("{n} 行選択".replace('{n}', selected));
+});
+
+                    
+$('.grid-batch-0').on('click', function() {
+
+    swal({
+        title: "本当に削除しますか？",
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#DD6B55",
+        confirmButtonText: "確認",
+        showLoaderOnConfirm: true,
+        allowOutsideClick: false,
+        cancelButtonText: "取消",
+        preConfirm: function() {
+            $('.swal2-cancel').hide();
+            return new Promise(function(resolve) {
+                $.ajax({
+                    method: 'post',
+                    url: 'admin/data/information/' + $.admin.grid.selected().join(),
+                    data: {
+                        _method:'delete',
+                        _token:'8kpl5BPMA129SiqODBUO6CRmIxiIsEMxMkv53sGD'
+                    },
+                    success: function (repsonse) {
+                        Exment.CommonEvent.CallbackExmentAjax(repsonse, resolve);
+                    },
+                    error: function (repsonse) {
+                        Exment.CommonEvent.CallbackExmentAjax(repsonse, resolve);
+                    }
+                });
+            });
+        }
+    });
+});
+
+                            let target = $('.6773574401a15-filter-btn');
+        target.unbind('click');
+        target.click(function (e) {
+    if ($('#filter-box').is(':visible')) {
+        $('#filter-box').addClass('hide');
+    } else {
+        if(''.length > 0){
+            if(target.attr('disabled')){
+                return;
+            }
+            if(target.hasClass('loaded')){
+                $('#filter-box').removeClass('hide');
+                return;
+            }
+            
+            var spinner = target.attr('disabled', true).data('loading-text');
+            target.append(spinner);
+            $.ajax({
+                url:'',
+                type: "GET",
+                contentType: 'application/json;charset=utf-8',
+                success: function (data) {
+                    $('#filter-box').html($(data.html).children('form'));
+                    eval(data.script);
+
+                    target.attr('disabled', false).addClass('loaded');
+                    target.find('.fa-spinner').remove();
+                    $('#filter-box').removeClass('hide');
+                }
+            });
+        }else{
+            $('#filter-box').removeClass('hide');
+        }
+    }
+});
+                    $('.isnull-ckey_17e7643c44b7340a09cf').iCheck({checkboxClass:'icheckbox_minimal-blue'});
+                    
+$('.grid-per-pager').on("change", function(e) {
+    $.pjax({url: this.value, container: '#pjax-container'});
+});
+
+                    $('.container-refresh').off('click').on('click', function() {
+    $.admin.reload();
+    $.admin.toastr.success('更新しました！', '', {positionClass:"toast-top-center"});
+});
+            });
+</script><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/script.blade.php-->
+    </div>
+
+    <!--start D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/footer.blade.php-->
+<!-- Main Footer -->
+<footer class="main-footer clearfix">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+
+                <strong>Version</strong>&nbsp;&nbsp; <span id="version">v6.1.6</span>
+            </div>
+    <!-- Default to the left -->
+    <strong>Powered by <a href="https://github.com/exceedone/exment" target="_blank">Exment</a></strong> (Interface <a href="https://github.com/z-song/laravel-admin" target="_blank">laravel-admin</a>)
+    <button href="#" style="display: none" role="scanButtonDashboard" data-qr_action="url"></button>
+</footer>
+
+<script>
+    var backButton = "戻る";
+</script><!--end D:\24.exceedone\Manual5-1\resources\views/vendor/admin/partials/footer.blade.php-->
+</div>
+
+<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/html.blade.php-->
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/html.blade.php-->
+
+<button id="totop" title="Go to top" style="display: none;"><i class="fa fa-chevron-up"></i></button>
+
+<script>
+    function LA() {}
+    LA.token = "8kpl5BPMA129SiqODBUO6CRmIxiIsEMxMkv53sGD";
+</script>
+
+<!-- REQUIRED JS SCRIPTS -->
+<!--start D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/js.blade.php-->
+<script src="vendor/laravel-admin/AdminLTE/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/dist/js/app.min.js"></script>
+<script src="vendor/laravel-admin/jquery-pjax/jquery.pjax.js"></script>
+<script src="vendor/laravel-admin/nprogress/nprogress.js"></script>
+<script src="vendor/laravel-admin/nestable/jquery.nestable.js"></script>
+<script src="vendor/laravel-admin/toastr/build/toastr.min.js"></script>
+<script src="vendor/laravel-admin/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
+<script src="vendor/laravel-admin/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="vendor/laravel-admin/laravel-admin/laravel-admin.js"></script>
+<script src="lib/js/jquery-ui.min.js"></script>
+<script src="lib/js/bignumber.min.js"></script>
+<script src="vendor/exment/validation/jquery.validate.js?ver=v6.1.6"></script>
+<script src="vendor/exment/chartjs/chart.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/codemirror.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/htmlmixed/htmlmixed.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/xml/xml.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/javascript/javascript.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/css/css.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/php/php.js?ver=v6.1.6"></script>
+<script src="vendor/exment/codemirror/mode/clike/clike.js?ver=v6.1.6"></script>
+<script src="vendor/exment/jquery/jquery.color.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/mathjs/math.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/numberformat.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/core/main.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/core/locales-all.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/interaction/main.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/daygrid/main.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/list/main.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/fullcalendar/timegrid/main.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/jstree/jstree.min.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/common_all.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/common.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/search.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/calc.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/notify_navbar.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/modal.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/workflow.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/changefield.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/customcolumn.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/customformitem.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/customform.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/preview.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/webapi.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/admin.webapi.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/getbox.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/admin.getbox.js?ver=v6.1.6"></script>
+<script src="vendor/exment/js/zxing.js?ver=v6.1.6"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/iCheck/icheck.min.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/colorpicker/bootstrap-colorpicker.min.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/input-mask/jquery.inputmask.bundle.min.js"></script>
+<script src="vendor/laravel-admin/moment/min/moment-with-locales.min.js"></script>
+<script src="vendor/laravel-admin/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script src="vendor/laravel-admin/bootstrap-fileinput/js/plugins/canvas-to-blob.min.js"></script>
+<script src="vendor/laravel-admin/bootstrap-fileinput/js/fileinput.min.js?v=4.5.2"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/select2/select2.full.min.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/select2/i18n/ja.js"></script>
+<script src="vendor/laravel-admin/number-input/bootstrap-number-input.js"></script>
+<script src="vendor/laravel-admin/AdminLTE/plugins/ionslider/ion.rangeSlider.min.js"></script>
+<script src="vendor/laravel-admin/bootstrap-switch/dist/js/bootstrap-switch.min.js"></script>
+<script src="vendor/laravel-admin/fontawesome-iconpicker/dist/js/fontawesome-iconpicker-customize.js"></script>
+<script src="vendor/laravel-admin/bootstrap-fileinput/js/plugins/sortable.min.js?v=4.5.2"></script>
+<script src="vendor/laravel-admin/bootstrap-duallistbox/dist/jquery.bootstrap-duallistbox.min.js?v=3.0.9"></script>
+<script src="vendor/exment/tinymce/tinymce.min.js"></script>
+<script src="admin/plugins/test_plugin_page/public/bundle.js"></script>
+<script src="admin/plugins/test_plugin_page/public/loadscript.js"></script>
+<script src="admin/plugins/test_plugin_page/public/style.js"></script>
+<script src="vendor/exment/js/customscript.js?ver=v6.1.6"></script>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/partials/js.blade.php-->
+
+</body>
+</html>
+<!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/index.blade.php--><!--end D:\24.exceedone\Manual5-1\vendor\exceedone\laravel-admin\src/../resources/views/content.blade.php-->
